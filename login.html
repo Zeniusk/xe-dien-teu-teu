@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập Admin - Xe Điện Tễu Tễu</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <script src="script/admin.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Đăng Nhập Admin</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Tài khoản:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Đăng Nhập</button>
+                <p id="error-message" class="error"></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

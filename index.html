@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xe điện Tễu Tễu</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div id="search-box">
+            <input type="text" placeholder="Tên sản phẩm bạn muốn tìm">
+            <button>
+                <img src="images/search-icon.png" alt="Tìm kiếm">
+            </button>
+        </div>
+        <div id="gio-hang">
+            <a href="giohang.html"><img src="images/cart-icon.png" alt="Giỏ hàng"></a>
+            <span class="so-hang">0</span>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="XE ĐẠP ĐIỆN.html">XE ĐẠP ĐIỆN</a></li>
+                <li><a href="XE MÁY ĐIỆN.html">XE MÁY ĐIỆN</a></li>
+                <li><a href="XE GA 50CC.html">XE GA 50CC</a></li>
+                <li><a href="XE BÁN CHẠY.html">XE BÁN CHẠY</a></li>
+                <li><a href="TIN TỨC.html">TIN TỨC</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="banner">
+        <img id="banner-img" src="images/banner.jpg" alt="Banner"> 
+        <button id="prev" onclick="prevSlide()">❮</button>
+        <button id="next" onclick="nextSlide()">❯</button>
+    </div>
+    <div id="content">
+        <div class="product">
+            <a href="xe1.html"><img src="images/product1.jpg" alt="Sản phẩm 1"></a>
+            <a href="xe1.html" class="link"><h3>XE MÁY ĐIỆN YADEA VEKOO</h3></a>
+            <p class="price">16.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: YADEA</p>
+                <p>- Màu sắc: Đen bóng</p>
+            </ul>
+            <a href="xe1.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+        <div class="product">
+            <a href="xe2.html"><img src="images/product2.jpg" alt="Sản phẩm 2"></a>
+            <a href="xe2.html" class="link"><h3>XE MÁY ĐIỆN VINFAST EVO NEO</h3></a>
+            <p class="price">18.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: VINFAST</p>
+                <p>- Màu sắc: Đen</p>
+            </ul>
+            <a href="xe2.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+        <div class="product">
+            <a href="xe3.html"><img src="images/product3.jpg" alt="Sản phẩm 3"></a>
+            <a href="xe3.html" class="link"><h3>XE MÁY ĐIỆN ESPERO DIAMOND PLUS 2025</h3></a>
+            <p class="price">19.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: DETECH</p>
+                <p>- Màu sắc: Trắng</p>
+            </ul>
+            <a href="xe3.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+        <div class="product">
+            <a href="xe4.html"><img src="images/product4.jpg" alt="Sản phẩm 4"></a>
+            <a href="xe4.html" class="link"><h3>XE ĐIỆN ESPERO T-REX</h3></a>
+            <p class="price">14.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: DETECH</p>
+                <p>- Màu sắc: Xám xi măng</p>
+            </ul>
+            <a href="xe4.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+        <div class="product">
+            <a href="xe5.html"><img src="images/product5.jpg" alt="Sản phẩm 5"></a>
+            <a href="xe5.html" class="link"><h3>XE ĐIỆN YADEA IGO</h3></a>
+            <p class="price">13.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: YADEA</p>
+                <p>- Màu sắc: Hồng</p>
+            </ul>
+            <a href="xe5.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+        <div class="product">
+            <a href="xe6.html"><img src="images/product6.jpg" alt="Sản phẩm 6"></a>
+            <a href="xe6.html" class="link"><h3>XE ĐẠP ĐIỆN M133 MINI</h3></a>
+            <p class="price">7.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: GIANT</p>
+                <p>- Màu sắc: Đen</p>
+            </ul>
+            <a href="xe6.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+        <div class="product">
+            <a href="xe7.html"><img src="images/product7.jpg" alt="Sản phẩm 7"></a>
+            <a href="xe7.html" class="link"><h3>XE GA 50CC KYMCO HERMOSA</h3></a>
+            <p class="price">28.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: KYMCO</p>
+                <p>- Màu sắc: Xám</p>
+            </ul>
+            <a href="xe7.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+        <div class="product">
+            <a href="xe8.html"><img src="images/product8.jpg" alt="Sản phẩm 8"></a>
+            <a href="xe8.html" class="link"><h3>XE GA 50CC KYMCO LIKE</h3></a>
+            <p class="price">29.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: KYMCO</p>
+                <p>- Màu sắc: Xanh Dương</p>
+            </ul>
+            <a href="xe8.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+        <div class="product">
+            <a href="xe9.html"><img src="images/product9.jpg" alt="Sản phẩm 9"></a>
+            <a href="xe9.html" class="link"><h3>XE GA 50CC SYM PRITI</h3></a>
+            <p class="price">27.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: SYM</p>
+                <p>- Màu sắc: Hồng phấn</p>
+            </ul>
+            <a href="xe9.html" class="link"><button class="buy">Mua</button></a>
+        </div>
+    </div>
+    <div id="footer">
+        <p><b>© 2025 Xe Điện Tễu Tễu.</b></p>
+        <p><b>Email: ngocquan0910@gmail.com</b></p>
+        <p><b>Địa chỉ 1: Nhân hòa, Mỹ Hào, Hưng Yên</b></p>
+        <p><b>Địa chỉ 2: Ngũ Thái, Thuận Thành, Bắc Ninh</b></p>
+        <div class="footer-logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div id="slogan">
+            <p><i class="phone"></i><span class="label">Liên hệ:</span> <span class="number">0868 840 006</span></p>
+            <p><i class="phone"></i><span class="label">Tư vấn:</span> <span class="number">0123 456 789</span></p>
+            <p><b>Anh em mình cứ thế thôi Hẹ Hẹ Hẹ</b></p>
+        </div>
+    </div>
+</body>
+</html>

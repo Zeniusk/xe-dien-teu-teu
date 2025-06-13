@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xe điện Tễu Tễu</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles1.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div id="search-box">
+            <input type="text" placeholder="Tên sản phẩm bạn muốn tìm">
+            <button>
+                <img src="images/search-icon.png" alt="Tìm kiếm">
+            </button>
+        </div>
+        <div id="gio-hang">
+            <a href="giohang.html"><img src="images/cart-icon.png" alt="Giỏ hàng"></a>
+            <span class="so-hang">0</span>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="XE ĐẠP ĐIỆN.html">XE ĐẠP ĐIỆN</a></li>
+                <li><a href="XE MÁY ĐIỆN.html">XE MÁY ĐIỆN</a></li>
+                <li><a href="XE GA 50CC.html">XE GA 50CC</a></li>
+                <li><a href="XE BÁN CHẠY.html">XE BÁN CHẠY</a></li>
+                <li><a href="TIN TỨC.html">TIN TỨC</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="noidung">
+        <div id="anh">
+            <div id="anh-img">
+                <a href="xe2.html"><img src="images/product2.jpg" alt="Sản phẩm 2"></a>
+            </div>
+            <div id="thongtin">
+                <h3>THÔNG TIN SẢN PHẨM</h3>
+                <p>Vận tốc tối đa: 60km/h</p>
+                <p>Trọng lượng xe: 88kg</p>
+                <p>Động cơ xe: Inhub 1500W</p>
+                <p>Sạc điện: Sạc đầy tự ngắt</p>
+                <p>Thời gian sạc: 6-8 tiếng</p>
+            </div>
+        </div>
+        <div id="info">
+            <a href="xe2.html" class="link"><h3>XE MÁY ĐIỆN VINFAST EVO NEO</h3></a>
+            <p class="gia">18.000.000 đ</p>
+            <ul>
+                <p>- Hãng sản xuất: VINFAST</p>
+                <p>- Màu sắc: Đen</p>
+            </ul>
+            <button class="mua" onclick="openBill()"><b>Mua ngay</b></button>
+            <div id="status">
+                <div class="item">
+                    <p><b>Năm Sản Xuất</b></p>
+                    <p>2023</p>
+                </div>
+                <div class="item">
+                    <p><b>Bảo hành</b></p>
+                    <p>5 Năm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p><b>© 2025 Xe Điện Tễu Tễu.</b></p>
+        <p><b>Email: ngocquan0910@gmail.com</b></p>
+        <p><b>Địa chỉ 1: Nhân hòa, Mỹ Hào, Hưng Yên</b></p>
+        <p><b>Địa chỉ 2: Ngũ Thái, Thuận Thành, Bắc Ninh</b></p>
+        <div class="footer-logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div id="slogan">
+            <p><i class="phone"></i><span class="label">Liên hệ:</span> <span class="number">0868 840 006</span></p>
+            <p><i class="phone"></i><span class="label">Tư vấn:</span> <span class="number">0123 456 789</span></p>
+            <p><b>Anh em mình cứ thế thôi Hẹ Hẹ Hẹ</b></p>
+        </div>
+    </div>
+    <div id="bill" class="bill">
+        <div class="noidung-bill">
+            <span class="close" onclick="closeBill()">×</span>
+            <h2>Thông tin khách hàng</h2>
+            <div class="bieu-mau">
+                <label>Họ và tên *</label>
+                <input type="text" name="ho-va-ten" placeholder="Nguyễn Văn A">
+            </div>
+            <div class="bieu-mau">
+                <label>Số điện thoại</label>
+                <input type="text" name="so-dien-thoai">
+            </div>
+            <div class="bieu-mau">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="abc@gmail.com">
+                <p class="note">Chúng tôi sẽ gửi thông tin đơn hàng qua email</p>
+            </div>
+            <div class="bieu-mau">
+                <label>Giao tận nơi</label>
+                <label><input type="radio" name="address" value="Giao tận nơi"> Giao tận nơi</label>
+                <label><input type="radio" name="address" value="Nhận tại cửa hàng"> Nhận tại cửa hàng</label>
+            </div>
+            <div class="bieu-mau">
+                <label>Thành phố/Tỉnh *</label>
+                <select name="thanh-pho">
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Bắc Ninh">Bắc Ninh</option>
+                    <option value="Hưng Yên">Hưng Yên</option>
+                </select>
+            </div>
+            <div class="bieu-mau">
+                <label>Ghi chú</label>
+                <input type="text" name="ghi-chu" placeholder="Ghi chú nếu bạn muốn">
+            </div>
+            <button class="submit-btn" onclick="submitForm()">Tiếp tục</button>
+        </div>
+    </div>
+</body>
+</html>

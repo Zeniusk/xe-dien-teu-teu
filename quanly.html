@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý - Xe Điện Tễu Tễu</title>
+    <link rel="stylesheet" href="styles/quanly.css">
+    <script src="script/quanly.js" defer></script>
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Quản Lý Sản Phẩm</h2>
+        <div class="admin-actions">
+            <button onclick="showAddForm()">Thêm Sản Phẩm Mới</button>
+            <button onclick="logout()">Đăng Xuất</button>
+        </div>
+        <div id="add-product-form" class="form-container" style="display: none;">
+            <h3>Thêm Sản Phẩm</h3>
+            <form id="add-product">
+                <div class="input-group">
+                    <label for="product-name">Tên Sản Phẩm:</label>
+                    <input type="text" id="product-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="product-price">Giá:</label>
+                    <input type="text" id="product-price" required>
+                </div>
+                <div class="input-group">
+                    <label for="product-url">URL Trang Chi Tiết:</label>
+                    <input type="text" id="product-url" required>
+                </div>
+                <button type="submit">Thêm</button>
+                <button type="button" onclick="hideAddForm()">Hủy</button>
+            </form>
+        </div>
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Giá</th>
+                    <th>URL</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody id="product-list"></tbody>
+        </table>
+    </div>
+</body>
+</html>

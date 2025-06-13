@@ -1,0 +1,291 @@
+#noidung {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+#anh {
+    padding: 10px;
+    width: 650px;
+}
+#anh img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #6a6969;
+    border-radius: 10px;
+}
+#info {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #545454;
+    width: 450px;
+    line-height: 1;
+    font-size: 24px;
+}
+#info h3 {
+    margin: 5px;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+.gia {
+    font-size: 26px;
+    color: #ff0000;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px 0;
+    text-align: left;
+}
+#info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+#info ul p {
+    margin: 8px 0;
+    font-size: 20px;
+    text-align: left;
+}
+.mua {
+    background-color: #ffffff;
+    color: #ff7300;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px solid #ff7300;
+    width: 100%;
+}
+.mua:hover {
+    background-color: #ff7300;
+    color: white;
+}
+#status {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    gap: 10px;
+}
+.item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+}
+.item p {
+    margin: 10px 0;
+    font-size: 20px;
+    background-color:navy;
+    color: white;
+    padding: 5px;
+}
+#thongtin {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #545454;
+    width: 600px;
+    margin-top: 20px;
+}
+#thongtin p {
+    font-size: 20px;
+    text-align: left;
+} 
+#thongtin h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    text-align: left;
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.bill {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.noidung-bill {
+    background-color: #f0f4f8;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa hoàn toàn */
+    box-sizing: border-box;
+    max-height: 90vh; /* Giới hạn chiều cao tối đa */
+    overflow-y: auto; /* Cho phép cuộn nếu nội dung vượt quá */
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.bieu-mau {
+    margin-bottom: 15px;
+}
+.bieu-mau label {
+    display: block;
+    margin-bottom: 5px;
+}
+.bieu-mau input[type="text"],
+.bieu-mau input[type="email"],
+.bieu-mau select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.bieu-mau .note {
+    font-size: 12px;
+    color: #666;
+}
+.bieu-mau input[type="radio"] {
+    margin-right: 10px;
+}
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+#cart {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+#cart h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.cart-item-detail,
+.cart-item-quantity,
+.cart-item-price,
+.cart-item-total,
+.cart-item-action {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.cart-item-action button {
+    background-color: #fff;
+    border: 1px solid #ff7300;
+    color: #ff7300;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#customer-info {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#customer-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+#customer-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #000;
+}
+#customer-info p strong {
+    color: #333;
+}
+/* Thiết lập responsive cho thiết bị nhỏ (di động) */
+@media (max-width: 768px) {
+  #header, #menu ul, #content, #noidung, .container, .news-grid, .news-list {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  #logo img,
+  #search-box,
+  #banner img,
+  .product,
+  #anh,
+  #info,
+  #thongtin,
+  .news-item {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #gio-hang {
+    left: 0;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-detail,
+  .cart-item-quantity,
+  .cart-item-price,
+  .cart-item-total,
+  .cart-item-action {
+    text-align: left;
+    width: 100%;
+  }
+
+  #banner img {
+    height: auto !important;
+  }
+
+  #status {
+    flex-direction: column;
+    align-items: center;
+  }
+}
