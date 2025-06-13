@@ -244,3 +244,30 @@ body {
     font-size: 12px;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+  #menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu ul li {
+    border-right: none;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  #header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #search-box {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #banner img {
+    height: auto !important;
+  }
+}
